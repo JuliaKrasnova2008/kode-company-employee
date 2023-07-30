@@ -74,7 +74,7 @@ export default function Profile() {
 
             <div className='profile__add-info profile__add-info_phone'>
                 <img className='profile__icon' src={phone} />
-                <p className='profile__mobile-numb'>{userInfo.phone}</p>
+                <a className='profile__mobile-numb' href="tel:{userInfo.phone}">{userInfo.phone}</a>
             </div>
         </section>
     )

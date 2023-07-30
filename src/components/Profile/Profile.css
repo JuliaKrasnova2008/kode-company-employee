@@ -56,6 +56,16 @@
     font-weight: 500;
     line-height: 20px; /* 125% */
 }
+.profile__mobile-numb {
+    text-decoration: none;
+    color: var(--light-text-primary, #050510);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 125% */
+    cursor: pointer;
+}
 
 @media screen and (max-width: 767px) {
     .profile {
