@@ -1,0 +1,40 @@
+.scroll {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    border-bottom: 1px solid #c3c3c6;
+    max-height: 36px;
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: row;
+}
+.scroll__element {
+    padding: 8px 12px;
+    margin: 0;
+    color: var(--light-text-tetriary, #97979b);
+    text-align: center;
+    font-feature-settings:
+        "clig" off,
+        "liga" off;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 133.333% */
+    cursor: pointer;
+}
+.scroll__element:hover {
+    opacity: 0.6;
+}
+.scroll__element_active {
+    color: var(--light-text-primary, #050510);
+    font-weight: 600;
+    border-bottom: 2px solid #6534ff;
+}
+
+@media screen and (max-width: 767px) {
+    .scroll__element {
+        padding: 4px 10px;
+        font-size: 12px;
+    }
+}

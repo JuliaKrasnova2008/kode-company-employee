@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Тестовое задание kode-company-employee
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Сайт, где необходимо загрузить актуальный список всех работников компании.
 
-## Available Scripts
+- "Top App Bar" - компонент представляет собой поле для поиска с иконкой «Поиск», кнопкой «Сортировка» и панелью вкладок. При переключении между вкладками на главном экране список работников фильтруется и отображаются только люди, работающие в выбранном департаменте, либо все, если выбрана вкладка «Все».
 
-In the project directory, you can run:
+- "Фильтр" - открывает модальное окно с вариантами сортировки списка работников. Есть два варианта сортировки: «По алфавиту» (по умолчанию), «По дню рождения». При переключении варианта сортировки модальное окно закрывается, а список на главной странице обновляется.
 
-### `npm start`
+- "Поиск" - фильтрация списка на главном экране и отображение только работников, соответствующих параметрам поиска. Поиск может осуществляться по имени, фамилии, никнейму или департаменту.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Страница «Профиль» - реализована как отдельный роут в приложении. Реализована возможность попасть на страницу по клику на главное фото сотрудника. Вверху экрана отображается кнопка назад для навигации на главную страницу. Также можно вернуться на главный экран, если нажать кнопку назад в браузере. В шапке экрана должна отображается аватарка пользователя, имя, никнейм и название департамента. Ниже находится дата рождения и номер телефона. При нажатии на номер телефона открывается приложение для звонка по номеру.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Inter&size=18&pause=1000&color=3456F3&multiline=true&width=500&height=30&lines=%D0%92%D1%91%D1%80%D1%81%D1%82%D0%BA%D0%B0+%D0%B8+JSX)](https://git.io/typing-svg)
 
-### `npm test`
+- HTML5
+- CCS3
+- адаптивная верстка (мобильные устройства, планшеты, десктопы)
+- создание компонентов на React
+- flexbox
+- grid Layout
+- позиционирование
+- псевдоклассы
+- Webpack
+- БЭМ
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Inter&size=18&pause=1000&color=3456F3&multiline=true&width=500&height=30&lines=%D0%A4%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D1%8C+%D0%BD%D0%B0+%C2%ABReact%C2%BB+%D0%B8+JS)](https://git.io/typing-svg)
 
-### `npm run build`
+- JavaScript (стандарт ES6)
+- React (Create React App, портирование разметки в JSX)
+- Redux
+- Express
+- MongoDB
+- NodeJS
+- API
+- Nginx
+- JWT
+- Postman
+- Реализованы асинхронные GET- и POST-запросы к API
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [Дизайн](https://www.figma.com/file/GRRKONipVClULsfdCAuVs1/KODE-Trainee-Dev-Осень'21?node-id=11%3A14414)
+- [Спецификация метода API ](https://kode-frontend-team.stoplight.io/docs/koder-stoplight/e981f97438300-get-users-list)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Инструкция по установке
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Клонировать репозиторий: git clone
+   `git@github.com:JuliaKrasnova2008/express-mesto-gha.git`
+2. Установить зависимости:
+   `npm i`
+3. Запустить приложение:
+   `npm run start`
+4. Запустить сервер с hot-reload:
+   `npm run dev`

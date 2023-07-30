@@ -1,0 +1,40 @@
+.page {
+    background-color: #ffffff;
+    min-height: 100vh;
+}
+
+.page__content {
+    margin: 0 auto;
+    padding: 0;
+    font-family: "Inter", Arial, sans-serif;
+    max-width: 1940px;
+    min-width: 320px;
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.inactive-button {
+    pointer-events: none;
+}
+
+.page__content-title {
+    margin: 0;
+    padding: 8px 8px 12px;
+    color: var(--light-text-primary, #050510);
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 116.667% */
+}
+
+@media screen and (max-width: 767px) {
+    .page__content-title {
+        font-size: 18px;
+    }
+}

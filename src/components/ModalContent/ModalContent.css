@@ -1,0 +1,99 @@
+.modalContent__title {
+    margin: 0;
+    margin-bottom: 35px;
+    padding: 0;
+    color: var(--light-text-primary, #050510);
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 120% */
+}
+.modalContent__checkbox_alphabet {
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+}
+.modalContent__checkbox_birthday {
+    margin: 0;
+    padding: 0;
+}
+
+.modalContent__subtitle {
+    padding: 12px;
+    color: var(--light-text-primary, #050510);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 125% */
+}
+
+.navigation__close-button {
+    margin: 0;
+    padding: 0;
+    background-image: url("../../image/close-overlay-button.svg");
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    width: 16px;
+    height: 16px;
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+/* input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + label {
+    background: url(../../image/UnSelected.svg);
+    height: 24px;
+    width: 24px;
+    display: inline-block;
+    padding: 0;
+}
+
+input[type="radio"]:checked + label {
+    background: url(../../image/Selected.svg);
+    height: 24px;
+    width: 24px;
+    display: inline-block;
+    padding: 0;
+} */
+
+.modalContent__checkbox {
+    margin: 0;
+    padding: 0;
+    height: 24px;
+    width: 24px;
+    background: url(../../image/UnSelected.svg);
+    position: relative;
+    cursor: pointer;
+    appearance: none;
+}
+
+.modalContent__checkbox::after {
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    content: "";
+    border-radius: 50%;
+    transition: 0.4s ease;
+}
+
+.modalContent__checkbox:checked::after {
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    background: url(../../image/Selected.svg);
+    content: "";
+}
