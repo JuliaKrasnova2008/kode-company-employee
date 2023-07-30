@@ -1,6 +1,6 @@
 # Тестовое задание kode-company-employee
 
-## Сайт, где необходимо загрузить актуальный список всех работников компании.
+## Сайт, где возможно загрузить актуальный список всех работников компании.
 
 - "Top App Bar" - компонент представляет собой поле для поиска с иконкой «Поиск», кнопкой «Сортировка» и панелью вкладок. При переключении между вкладками на главном экране список работников фильтруется и отображаются только люди, работающие в выбранном департаменте, либо все, если выбрана вкладка «Все».
 
@@ -37,13 +37,13 @@
 - Postman
 - Реализованы асинхронные GET- и POST-запросы к API
 
-- [Дизайн](https://www.figma.com/file/GRRKONipVClULsfdCAuVs1/KODE-Trainee-Dev-Осень'21?node-id=11%3A14414)
-- [Спецификация метода API ](https://kode-frontend-team.stoplight.io/docs/koder-stoplight/e981f97438300-get-users-list)
+[Дизайн](https://www.figma.com/file/GRRKONipVClULsfdCAuVs1/KODE-Trainee-Dev-Осень'21?node-id=11%3A14414)
+[Спецификация метода API ](https://kode-frontend-team.stoplight.io/docs/koder-stoplight/e981f97438300-get-users-list)
 
 ## Инструкция по установке
 
 1. Клонировать репозиторий: git clone
-   `git@github.com:JuliaKrasnova2008/express-mesto-gha.git`
+   `git@github.com:JuliaKrasnova2008/kode-company-employee.git`
 2. Установить зависимости:
    `npm i`
 3. Запустить приложение:
