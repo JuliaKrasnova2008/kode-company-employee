@@ -16,6 +16,7 @@ export default function ModalContent({ closeModal }) {
                     <input
                         onChange={() => {
                             dispatch(setSort("alphabet"))
+                            closeModal()
                         }}
                         className="modalContent__checkbox"
                         type="radio"
@@ -32,6 +33,7 @@ export default function ModalContent({ closeModal }) {
                     <input
                         onChange={() => {
                             dispatch(setSort("birthday"))
+                            closeModal()
                         }}
                         className="modalContent__checkbox"
                         type="radio"

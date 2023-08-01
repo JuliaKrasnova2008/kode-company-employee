@@ -66,6 +66,9 @@
     line-height: 20px; /* 125% */
     cursor: pointer;
 }
+.profile__mobile-numb:hover {
+    opacity: 0.6;
+}
 
 @media screen and (max-width: 767px) {
     .profile {

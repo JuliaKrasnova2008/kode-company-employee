@@ -8,12 +8,14 @@ export default function SearchForm() {
     const search = useSelector((state) => state.search.search);
     const dispatch = useDispatch();
 
+    const [active, setActive] = useState(false)
+
 
     return (
         <section className="search">
-            <form className='search-form'>
+            <div className='search-form'>
                 <div className='search-form__input'>
-                    <span className={search ? 'search-form__img_active' : 'search-form__img'} />
+                    <span className={active ? 'search-form__img_active' : 'search-form__img'} />
                     <input
                         className="search-form__enter"
                         id="input-enter"
@@ -23,10 +25,15 @@ export default function SearchForm() {
                         placeholder="Введите имя, тег или департамент..."
                         value={search}
                         onChange={(event) => dispatch(setSearch(event.target.value))}
+                        //когда взаимод с любым полем формы
+                        onFocus={() => setActive(true)}
+                        //когда выходит из фокуса
+                        onBlur={() => setActive(false)}
                     />
                 </div>
                 <Filter />
-            </form>
+            </div>
+
         </section>
     )
 }

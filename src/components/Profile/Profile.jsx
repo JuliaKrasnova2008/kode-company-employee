@@ -7,8 +7,12 @@ import avatar from '../../image/avatar.png'
 import star from '../../image/star.svg'
 import phone from '../../image/phone-alt.svg'
 import { parsePhoneNumber } from 'libphonenumber-js'
+import Sciletons from '../Sciletons/Sciletons';
 
 export default function Profile() {
+    //стейт для загрузки
+    const [loading, setLoading] = useState(false);
+
     //достаем id  c помощью деструктуризации,тк id как параметр указан в App.js. Вытаскиваем его из строки поиска
     const { id } = useParams();
 
@@ -16,8 +20,10 @@ export default function Profile() {
 
     //у api методом getAllUser получаем всех пользователей и с помощью метода find нашли того, с кем совпадает id в строке поиска
     useEffect(() => {
+        setLoading(true)
         api.getAllUser().then((data) => {
             setUserInfo(data.items.find((elem) => elem.id === id))
+            setLoading(false)
         })
     }, [])
 
@@ -45,10 +51,9 @@ export default function Profile() {
 
     //распарсить номер телефона
     // const phoneNumber = parsePhoneNumber(userInfo.phone, 'RU').formatInternational()
-    // console.log(phoneNumber);
 
-    return (
-        <section className='profile'>
+    return loading ? <Sciletons /> :
+        < section className='profile' >
             <div className='profile__header'>
                 <Link className='profile__back' to='/'>
                     <img className='profile__vector' src={back}></img>
@@ -74,8 +79,8 @@ export default function Profile() {
 
             <div className='profile__add-info profile__add-info_phone'>
                 <img className='profile__icon' src={phone} />
-                <a className='profile__mobile-numb' href="tel:{userInfo.phone}">{userInfo.phone}</a>
+                <a className='profile__mobile-numb' href="tel:{userInfo.phone}">{userInfo.phone && parsePhoneNumber(userInfo.phone, 'RU').formatInternational()}</a>
             </div>
         </section>
-    )
+
 }
