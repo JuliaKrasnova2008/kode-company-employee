@@ -7,7 +7,7 @@ import avatar from '../../image/avatar.png'
 import star from '../../image/star.svg'
 import phone from '../../image/phone-alt.svg'
 import { parsePhoneNumber } from 'libphonenumber-js'
-import Sciletons from '../Sciletons/Sciletons';
+import Preloader from '../../Preloader/Preloader';
 
 export default function Profile() {
     //стейт для загрузки
@@ -52,7 +52,7 @@ export default function Profile() {
     //распарсить номер телефона
     // const phoneNumber = parsePhoneNumber(userInfo.phone, 'RU').formatInternational()
 
-    return loading ? <Sciletons /> :
+    return loading ? <Preloader /> :
         < section className='profile' >
             <div className='profile__header'>
                 <Link className='profile__back' to='/'>
