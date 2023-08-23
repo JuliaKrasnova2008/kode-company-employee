@@ -28,13 +28,8 @@
 - JavaScript (стандарт ES6)
 - React (Create React App, портирование разметки в JSX)
 - Redux
-- Express
-- MongoDB
-- NodeJS
 - API
-- Nginx
 - JWT
-- Postman
 - Реализованы асинхронные GET- и POST-запросы к API
 
 [Дизайн](https://www.figma.com/file/GRRKONipVClULsfdCAuVs1/KODE-Trainee-Dev-Осень'21?node-id=11%3A14414)
